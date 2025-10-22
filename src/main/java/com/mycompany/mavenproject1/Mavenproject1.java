@@ -3,7 +3,7 @@
  */
 
 package com.mycompany.mavenproject1;
-
+import java.util.Scanner;
 /**
  *
  * @author LAB-USR-TRUJILLO
@@ -11,9 +11,13 @@ package com.mycompany.mavenproject1;
 public class Mavenproject1 {
 
     public static void main(String[] args) {
-       int b=20;
-       int a=10;
+        Scanner ingreso= new Scanner(System.in);
+        
+        System.out.println("ingresa el primer numero");
+        int a=ingreso.nextInt();
+        System.out.println("ingresa el segundo numero");
+        int b=ingreso.nextInt();
        
-        System.out.println(a+b);
+        System.out.println("el numero es" + a+b);
     }
 }
